@@ -66,7 +66,9 @@ Moe, moe, kyun!")
    `(vertical-border ((,class (:foreground "#d7d7af" :background "#d7d7af"))))
 
    ;; Escape and prompt faces
-   `(minibuffer-prompt ((,class (:foreground ,black-5 :background ,green-2 :bold nil))))
+   ;; `(minibuffer-prompt ((,class (:foreground ,black-5 :background ,green-2 :bold nil))))
+   ;; remove the background of the prompt (seen in helm-M-x)
+   `(minibuffer-prompt ((,class (:foreground ,black-5 :background nil :bold nil))))
    `(escape-glyph ((,class (:foreground ,yellow-3))))
    `(error ((,class (:foreground ,red-0))))
    `(warning ((,class (:foreground ,orange-2 :bold t))))
