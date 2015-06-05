@@ -552,7 +552,9 @@ Moe, moe, kyun!")
    `(eshell-prompt ((,class (:foreground ,black-3 :background ,yellow-0 :bold t))))
 
    ;; Comint prompt
-   `(comint-highlight-prompt ((,class (:foreground ,black-3 :background ,yellow-0 :bold t))))
+   ;; `(comint-highlight-prompt ((,class (:foreground ,black-3 :background ,yellow-0 :bold t))))
+   ;; yellow background was distracting
+   `(comint-highlight-prompt ((,class (:foreground ,black-3 :background nil :bold t))))
 
    ;; which-function-mode
    `(which-func ((,class (:foreground ,white-0 :background ,orange-2))))
@@ -729,7 +731,9 @@ Moe, moe, kyun!")
 
    ;; compilation
    `(compilation-column-number ((,class (:foreground ,green-3))))
-   `(compilation-error ((,class (:foreground ,red-3 :background ,red-000 :bold t))))
+   ;; `(compilation-error ((,class (:foreground ,red-3 :background ,red-000 :bold t))))
+   ;; the red background was distracting me
+   `(compilation-error ((,class (:foreground ,red-3 :background nil :bold t))))
    `(compilation-info ((,class (:foreground ,orange-2))))
    `(compilation-line-number ((,class (:foreground ,blue-2))))
    `(compilation-mode-line-exit ((,class (:foreground ,green-4 :background ,green-0 :bold t))))
