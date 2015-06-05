@@ -44,8 +44,10 @@ Moe, moe, kyun!")
    `(cursor ((,class (:background ,black-5))))
 
    ;; Highlighting faces
-   `(fringe ((,class (:foreground ,black-1 :background ,linum-light))))
-   `(linum ((,class (:foreground ,linum-dark :background ,linum-light))))
+   ;; `(fringe ((,class (:foreground ,black-1 :background ,linum-light))))
+   `(fringe ((,class (:foreground ,black-1 :background nil))))
+   ;; `(linum ((,class (:foreground ,linum-dark :background ,linum-light))))
+   `(linum ((,class (:foreground ,linum-dark :background nil))))
    `(linum-highlight-face ((,class (:background ,linum-dark :foreground ,linum-light))))
    `(highlight ((,class (:background ,green-0))))
    `(hl-line ((,class (:background ,green-00)))) ; Embedded strings of IM (e.g. fcitx) would be very unreadable... orz
