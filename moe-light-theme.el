@@ -53,7 +53,7 @@ Moe, moe, kyun!")
    `(hl-line ((,class (:background ,green-00)))) ; Embedded strings of IM (e.g. fcitx) would be very unreadable... orz
    `(highlight-symbol-face ((,class (:background ,green-00))))
    ;; `(region ((,class (:foreground ,white-0 :background ,blue-1))))
-   `(region ((,class (:foreground nil :background ,white-0))))
+   `(region ((,class (:foreground nil :background ,white-2))))
    `(secondary-selection ((,class (:background ,blue-3 :foreground ,white-0))))
    `(isearch ((,class (:foreground ,white-0 :background ,orange-3))))
    `(lazy-highlight ((,class (:background ,magenta-3 :foreground ,white-0))))
