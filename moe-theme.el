@@ -330,7 +330,7 @@ Don't setq this manually.")
       (powerline-moe-theme)))
 
 (defun moe-dark ()
-  "Load moe-light-theme with your customizations."
+  "Load moe-dark-theme with your customizations."
   (interactive)
   (if (not (null moe-theme-revert-theme))
       (load-theme 'moe-dark t))
