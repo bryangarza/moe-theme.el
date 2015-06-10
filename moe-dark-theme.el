@@ -45,13 +45,16 @@ Moe, moe, kyun!")
    `(cursor ((,class (:background ,white-1))))
 
    ;; Highlighting faces
-   `(fringe ((,class (:foreground ,black-1 :background ,black-3))))
-   `(linum ((,class (:foreground ,white-3 :background ,black-3))))
+   ;; `(fringe ((,class (:foreground ,black-1 :background ,black-3))))
+   `(fringe ((,class (:foreground ,black-1 :background nil))))
+   ;; `(linum ((,class (:foreground ,white-3 :background ,black-3))))
+   `(linum ((,class (:foreground ,white-3 :background nil))))
    `(linum-highlight-face ((,class (:background ,green-0 :foreground ,black-4))))
    `(highlight ((,class (:background ,black-3))))
    `(hl-line ((,class (:background ,black-3))))
    `(highlight-symbol-face ((,class (:background ,black-3))))
-   `(region ((,class (:foreground ,black-3 :background ,green-0))))
+   ;; `(region ((,class (:foreground ,black-3 :background ,green-0))))
+   `(region ((,class (:foreground nil :background ,black-3))))
    `(secondary-selection ((,class (:background ,blue-3 :foreground ,white-0))))
    `(isearch ((,class (:foreground ,white-1 :background ,orange-3))))
    `(lazy-highlight ((,class (:background ,magenta-3 :foreground ,white-1))))
@@ -67,7 +70,8 @@ Moe, moe, kyun!")
    `(vertical-border ((,class (:foreground ,black-3 :background ,black-3))))
 
    ;; Escape and prompt faces
-   `(minibuffer-prompt ((,class (:foreground ,black-3 :background ,green-2))))
+   ;; `(minibuffer-prompt ((,class (:foreground ,black-3 :background ,green-2))))
+   `(minibuffer-prompt ((,class (:foreground ,green-2 :background nil))))
    `(escape-glyph ((,class (:foreground ,yellow-3))))
    `(error ((,class (:foreground ,red-0))))
    `(warning ((,class (:foreground ,orange-1))))
@@ -555,7 +559,8 @@ Moe, moe, kyun!")
    `(eshell-prompt ((,class (:foreground ,white-0 :background ,black-2-5 :bold t))))
 
    ;; Comint prompt
-   `(comint-highlight-prompt ((,class (:foreground ,white-0 :background ,black-2-5 :bold t))))
+   ;; `(comint-highlight-prompt ((,class (:foreground ,white-0 :background ,black-2-5 :bold t))))
+   `(comint-highlight-prompt ((,class (:foreground ,white-0 :background nil :bold t))))
 
    ;; which-function-mode
    `(which-func ((,class (:foreground ,white-0 :background ,orange-2))))
@@ -735,7 +740,8 @@ Moe, moe, kyun!")
 
    ;; compilation
    `(compilation-column-number ((,class (:foreground ,green-2))))
-   `(compilation-error ((,class (:foreground ,red-3 :background ,red-0 :bold t))))
+   ;; `(compilation-error ((,class (:foreground ,red-3 :background ,red-0 :bold t))))
+   `(compilation-error ((,class (:foreground ,red-0 :background nil :bold t))))
    `(compilation-info ((,class (:foreground ,orange-1))))
    `(compilation-line-number ((,class (:foreground ,blue-1))))
    `(compilation-mode-line-exit ((,class (:foreground ,green-4 :background ,green-0 :bold t))))
