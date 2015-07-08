@@ -791,6 +791,7 @@ Moe, moe, kyun!")
    `(haskell-interactive-face-garbage ((,class (:foreground ,black-2))))
    `(haskell-interactive-face-prompt ((,class (:foreground ,green-01 :background ,black-2-5 :bold t))))
    `(haskell-interactive-face-result ((,class (:foreground ,blue-1))))
+   `(haskell-literate-comment-face ((,class (foreground ,white-0 :background ,black-5))))
 
    ;; tty-menu
    `(menu ((,class (:foreground ,black-1 :background ,black-3))))
